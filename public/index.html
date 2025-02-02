@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="/src/images/circle-profile-image.png">
+    <link rel="stylesheet" href="output-style.css">
+    <title>Portfolio</title>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".hamburger-icon");
+            menu.classList.toggle("open")
+            icon.classList.toggle("open")
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="border-b-2 border-gray-300 p-8 flex justify-between md:justify-evenly items-center">
+        <div>
+            <h1 class="text-3xl font-extrabold text-teal-800">MARI</h1>
+        </div>
+
+        <div class="hidden md:block">
+            <ul class="flex gap-x-8 text-xl">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="humburger-menu block md:hidden">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul class="bg-white p-4 gap-y-4">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="profile" class="pt-0">
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-x-10 border-b py-[10rem]">
+                <div class="drop-shadow-2xl rounded-full">
+                    <img src="/src/images/circle-profile-image.png" alt="profile-image" class="w-[500px]">
+                </div>
+                <div class="flex flex-col gap-y-2 text-center lg:text-start">
+                    <span class="text-xl lg:text-2xl text-gray-700 font-bold">Hello, I'm</span>
+                    <h1 class="text-5xl lg:text-6xl font-extrabold">Marijoe Gotong</h1>
+                    <span class="text-3xl lg:text-4xl font-bold text-teal-800">Frontend Developer</span>
+                    <div class="mt-2 flex gap-x-4 justify-center lg:justify-start ">
+                        <button onclick="window.open('/src/assets/resume-marijoe.pdf')"
+                            class="bg-gray-50 px-5 py-3 rounded-xl font-semibold text-gray-600 border text-sm hover:bg-teal-800 hover:text-white">
+                            Download CV</button>
+                        <button onclick="location.href='./#contact'"
+                            class="bg-white px-8 py-3 rounded-xl font-semibold text-gray-600 border text-sm hover:bg-teal-800 hover:text-white">
+                            Contact Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-[5rem] border-b">
+            <div>
+                <div class="justify-self-center text-center">
+                    <span class="text-gray-600 text-2xl">Get To Know More</span>
+                    <h1 class="text-6xl font-bold">About Me</h1>
+                </div>
+                <div class="flex flex-col place-content-center gap-y-4 xl:flex-row xl:mx-[5rem] mt-4 items-center">
+                    <div class="about-pic-container">
+                        <img src="/src/images/cartoon-me.png" alt="about-profile-pic"
+                            class="about-pic w-[500px] xl:w-[2000px]">
+                    </div>
+                    <div
+                        class="detail-container flex flex-col h-fit gap-y-4 border px-[4rem] py-[3rem] rounded-3xl lg:w-[50rem] xl:w-[250rem] text-lg text-justify">
+                        <p>Im a UI Designer and Front End Developer.</p>
+                        <p>
+
+                            I like Art, so I enjoy creating Designs and turn them into a Responsive User Friendly
+                            Interfaces. I
+                            aslo tend to overthink. That's why, when I'm working on something, I'll always start with
+                            organizing
+                            my thoughts and list what are the things that needs to be done. I want to learn how to write
+                            a
+                            clean
+                            and efficient code, think about creating logics, but it seems like that side is not fit for
+                            me.
+                        </p>
+                        <p>
+                            If programming is really not for me, you can find me switching into photography or graphics
+                            design,
+                            more like create logo, editing Images and Videos, or maybe creating a webtoon because that's
+                            the
+                            first path I want to take. But anyways that's the short description on what's im into.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="md:mx-[5rem] py-[5rem] border-b">
+            <div class="grid gap-y-10">
+                <div class="justify-self-center text-center">
+                    <span class="text-gray-600 text-2xl">Explore My</span>
+                    <h1 class="text-5xl font-bold">Experience</h1>
+                </div>
+                <div id="experience-details" class="flex justify-center items-center p-4">
+                    <p class="text-justify text-lg">
+                        I specialize in frontend development, crafting responsive and visually engaging
+                        interfaces. While I have some experience in backend development, I’m more effective on
+                        the frontend side. I'm open to any position as long as there’s an opportunity to learn
+                        and grow with guidance from experienced mentors.
+                    </p>
+                </div>
+
+                <div id="experience-card" class="flex flex-col gap-x-4 gap-y-4 justify-center mt-4">
+                    <div class="justify-items-center border p-8 rounded-xl">
+                        <div class="text-center">
+                            <span class="text-3xl font-semibold">Frontend Development</span>
+                        </div>
+
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 gap-x-[2rem] gap-y-8 justify-items-center">
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <img width="40" height="40"
+                                        src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/40/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-shadow-tal-revivo.png"
+                                        alt="external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-shadow-tal-revivo" />
+                                    <span class="text-2xl">HTML</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Intermediate</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <img width="40" height="40"
+                                        src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/40/external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-shadow-tal-revivo.png"
+                                        alt="external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-shadow-tal-revivo" />
+                                    <span class="text-2xl">VueJS</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Intermediate</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <img width="40" height="40"
+                                        src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/external-nuxt-js-a-free-and-open-source-web-application-framework-logo-color-tal-revivo.png"
+                                        alt="external-nuxt-js-a-free-and-open-source-web-application-framework-logo-color-tal-revivo" />
+                                    <span class="text-2xl">NuxtJS</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Basic Knowledge</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#f7df1e" d="M6,42V6h36v36H6z"></path>
+                                        <path fill="#000001"
+                                            d="M29.538,32.947c0.692,1.124,1.444,2.201,3.037,2.201c1.338,0,2.04-0.665,2.04-1.585 c0-1.101-0.726-1.492-2.198-2.133l-0.807-0.344c-2.329-0.988-3.878-2.226-3.878-4.841c0-2.41,1.845-4.244,4.728-4.244 c2.053,0,3.528,0.711,4.592,2.573l-2.514,1.607c-0.553-0.988-1.151-1.377-2.078-1.377c-0.946,0-1.545,0.597-1.545,1.377 c0,0.964,0.6,1.354,1.985,1.951l0.807,0.344C36.452,29.645,38,30.839,38,33.523C38,36.415,35.716,38,32.65,38 c-2.999,0-4.702-1.505-5.65-3.368L29.538,32.947z M17.952,33.029c0.506,0.906,1.275,1.603,2.381,1.603 c1.058,0,1.667-0.418,1.667-2.043V22h3.333v11.101c0,3.367-1.953,4.899-4.805,4.899c-2.577,0-4.437-1.746-5.195-3.368 L17.952,33.029z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-2xl">JavaScript</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Basic Knowledge</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <img width="40" height="40"
+                                        src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/40/external-cascading-style-sheets-language-used-for-describing-the-presentation-of-a-document-logo-shadow-tal-revivo.png"
+                                        alt="external-cascading-style-sheets-language-used-for-describing-the-presentation-of-a-document-logo-shadow-tal-revivo" />
+                                    <span class="text-2xl">CSS</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Basic Knowledge</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                                        viewBox="0 0 48 48">
+                                        <linearGradient id="iOmQfjoCC4Hw6zVwRjSDha_x7XMNGh2vdqA_gr1" x1="21.861"
+                                            x2="25.703" y1="8.237" y2="36.552" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#00c1e0"></stop>
+                                            <stop offset="1" stop-color="#009bb8"></stop>
+                                        </linearGradient>
+                                        <path fill="url(#iOmQfjoCC4Hw6zVwRjSDha_x7XMNGh2vdqA_gr1)"
+                                            d="M24,9.604c-5.589,0-9.347,2.439-11.276,7.318c-0.2,0.505,0.417,0.92,0.816,0.551 c2.035-1.882,4.322-2.505,6.86-1.871c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24 c5.589,0,9.348-2.44,11.276-7.319c0.2-0.505-0.417-0.92-0.816-0.551c-2.035,1.882-4.322,2.506-6.86,1.872 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-5.589,0-9.348,2.44-11.276,7.319 c-0.2,0.505,0.417,0.92,0.816,0.551c2.035-1.882,4.322-2.506,6.86-1.871c1.825,0.457,3.13,1.781,4.575,3.246 c2.353,2.388,5.077,5.152,11.025,5.152c5.589,0,9.348-2.44,11.276-7.319c0.2-0.505-0.417-0.92-0.816-0.551 c-2.035,1.882-4.322,2.506-6.86,1.871c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24L12,24z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-2xl">TailwindCSS</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Intermediate</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <img width="40" height="40"
+                                        src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/40/external-figma-a-better-way-to-design-and-gather-feedback-all-in-one-place-logo-shadow-tal-revivo.png"
+                                        alt="external-figma-a-better-way-to-design-and-gather-feedback-all-in-one-place-logo-shadow-tal-revivo" />
+                                    <span class="text-2xl">Figma</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Basic Knowledge</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="justify-items-center border p-8 rounded-xl px-[5rem]">
+                        <div class="text-center">
+                            <span class="text-3xl font-semibold">Backend Development</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 p-4 gap-x-[2rem] gap-y-8 justify-items-center">
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#F44336"
+                                            d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z">
+                                        </path>
+                                        <path fill="#F44336"
+                                            d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z">
+                                        </path>
+                                        <g>
+                                            <path fill="#1565C0"
+                                                d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055zM29.129 27.395c0 0 1.941-1.383 2.458-1.902-4.763 1.011-15.638 1.147-15.638.269 0-.809 3.507-1.638 3.507-1.638s-7.773-.112-7.773 2.181C11.683 28.695 21.858 28.866 29.129 27.395z">
+                                            </path>
+                                            <path fill="#1565C0"
+                                                d="M27.935,29.571c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z">
+                                            </path>
+                                            <path fill="#1565C0"
+                                                d="M18.686,32.739c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z">
+                                            </path>
+                                            <path fill="#1565C0"
+                                                d="M36.281,36.632c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z">
+                                            </path>
+                                            <path fill="#1565C0"
+                                                d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-2xl">Java</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Basic Knowledge</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <img width="40" height="40"
+                                        src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/40/external-structured-query-language-a-standard-computer-language-in-server-database-shadow-tal-revivo.png"
+                                        alt="external-structured-query-language-a-standard-computer-language-in-server-database-shadow-tal-revivo" />
+                                    <span class="text-2xl">Database</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Basic Knowledge</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                                        viewBox="0 0 48 48">
+                                        <linearGradient id="Xfeb2ANkiLrn2PxL5jJHLa_PZQVBAxaueDJ_gr1" x1="3.851"
+                                            x2="34.471" y1="2.596" y2="33.216" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#6d7479"></stop>
+                                            <stop offset="1" stop-color="#323538"></stop>
+                                        </linearGradient>
+                                        <path fill="url(#Xfeb2ANkiLrn2PxL5jJHLa_PZQVBAxaueDJ_gr1)"
+                                            d="M33.244,25l-9.121-12h1.18c0.84,0,1.631,0.392,2.139,1.061l7.059,9.287l7.059-9.287	C42.067,13.392,42.858,13,43.698,13h1.18l-9.121,12l9.547,12.56h-1.18c-0.84,0-1.631-0.392-2.139-1.061L34.5,26.652l-7.485,9.847	c-0.508,0.668-1.299,1.061-2.139,1.061h-1.18L33.244,25z M4,26v0.783c0,4.199,2.776,8.032,6.868,8.972	c4.439,1.02,8.49-1.247,10.228-4.842C21.366,30.355,21.928,30,22.547,30h1.028c-1.319,4.655-5.616,8.059-10.707,7.999	C6.777,37.927,2,32.694,2,26.142V26v-2l0-0.716c0-5.427,3.812-10.273,9.171-11.136C18.055,11.039,24,16.325,24,23v3H4z M4,24h18v-1	c0-5.648-5.202-10.08-11.076-8.768C6.804,15.153,4,19.002,4,23.71V24z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-2xl">ExpressJS</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Basic Knowledge</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-2 items-center">
+                                <div class="flex gap-x-2 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                                        viewBox="0 0 48 48">
+                                        <linearGradient id="I7Vs8jY1D20h9XOqJ6Dbaa_mhwmyz1eu7T5_gr1" x1="10.925"
+                                            x2="26.209" y1="-11.924" y2="30.068" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#889097"></stop>
+                                            <stop offset="1" stop-color="#4c5963"></stop>
+                                        </linearGradient>
+                                        <path fill="url(#I7Vs8jY1D20h9XOqJ6Dbaa_mhwmyz1eu7T5_gr1)" fill-rule="evenodd"
+                                            d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0	c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867	c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0	c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867	c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z"
+                                            clip-rule="evenodd"></path>
+                                        <linearGradient id="I7Vs8jY1D20h9XOqJ6Dbab_mhwmyz1eu7T5_gr2" x1="20.213"
+                                            x2="36.727" y1="13.776" y2="59.147" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#889097"></stop>
+                                            <stop offset="1" stop-color="#4c5963"></stop>
+                                        </linearGradient>
+                                        <path fill="url(#I7Vs8jY1D20h9XOqJ6Dbab_mhwmyz1eu7T5_gr2)" fill-rule="evenodd"
+                                            d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836	c3.343-1.872,13.405-7.507,16.748-9.38c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331	c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#fff" fill-rule="evenodd"
+                                            d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14s-14-6.273-14-14	S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z"
+                                            clip-rule="evenodd"></path>
+                                        <linearGradient id="I7Vs8jY1D20h9XOqJ6Dbac_mhwmyz1eu7T5_gr3" x1="27.238"
+                                            x2="42.569" y1="2.443" y2="44.566" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#889097"></stop>
+                                            <stop offset="1" stop-color="#4c5963"></stop>
+                                        </linearGradient>
+                                        <path fill="url(#I7Vs8jY1D20h9XOqJ6Dbac_mhwmyz1eu7T5_gr3)" fill-rule="evenodd"
+                                            d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127	L23.593,24L42.485,13.205z"
+                                            clip-rule="evenodd"></path>
+                                        <path
+                                            d="M38,20v2h2v1h-2v2h2v1h-2v2h-1v-2h-2v2h-1v-2h-2v-1h2v-2h-2v-1h2v-2h1v2h2v-2H38 M35,25h2v-2h-2V25 M39,19h-1h-1h-1h-1h-1 h-1v1v1h-1h-1v1v1v1v1v1v1h1h1v1v1h1h1h1v-1v-1v1v1h1h1h1v-1v-1h1h1v-1v-1v-1h-1h-1h1h1v-1v-1v-1h-1h-1v-1V19L39,19z"
+                                            opacity=".05"></path>
+                                        <path
+                                            d="M38,20v2h2v1h-2v2h2v1h-2v2h-1v-2h-2v2h-1v-2h-2v-1h2v-2h-2v-1h2v-2h1v2h2v-2H38 M35,25h2v-2h-2V25 M38.5,19.5H38h-1h-0.5 V20v1.5h-1V20v-0.5H35h-1h-0.5V20v1.5H32h-0.5V22v1v0.5H32h1.5v1H32h-0.5V25v1v0.5H32h1.5V28v0.5H34h1h0.5V28v-1.5h1V28v0.5H37h1 h0.5V28v-1.5H40h0.5V26v-1v-0.5H40h-1.5v-1H40h0.5V23v-1v-0.5H40h-1.5V20V19.5L38.5,19.5z M35.5,23.5h1v1h-1V23.5L35.5,23.5z"
+                                            opacity=".07"></path>
+                                        <path fill="#fff"
+                                            d="M40,23v-1h-2v-2h-1v2h-2v-2h-1v2h-2v1h2v2h-2v1h2v2h1v-2h2v2h1v-2h2v-1h-2v-2H40z M37,25h-2v-2h2V25 z">
+                                        </path>
+                                        <g>
+                                            <path
+                                                d="M24,10c5.128,0,9.602,2.771,12.041,6.887l-6.073,3.47C28.737,18.347,26.527,17,24,17c-3.864,0-7,3.136-7,7 c0,3.863,3.137,7,7,7c2.57,0,4.812-1.392,6.029-3.459l6.132,3.374C33.75,35.142,29.21,38,24,38c-7.727,0-14-6.273-14-14 S16.273,10,24,10 M24,9C15.729,9,9,15.729,9,24s6.729,15,15,15c5.367,0,10.36-2.908,13.03-7.59l0.503-0.882l-0.89-0.49 l-6.132-3.374l-0.851-0.468l-0.493,0.837C28.09,28.863,26.11,30,24,30c-3.308,0-6-2.692-6-6s2.692-6,6-6 c2.099,0,4.011,1.076,5.115,2.879l0.507,0.828l0.842-0.481l6.073-3.47l0.882-0.504l-0.518-0.874C34.205,11.827,29.262,9,24,9L24,9 z"
+                                                opacity=".05"></path>
+                                            <path
+                                                d="M24,10c5.128,0,9.602,2.771,12.041,6.887l-6.073,3.47C28.737,18.347,26.527,17,24,17c-3.864,0-7,3.136-7,7 c0,3.863,3.137,7,7,7c2.57,0,4.812-1.392,6.029-3.459l6.132,3.374C33.75,35.142,29.21,38,24,38c-7.727,0-14-6.273-14-14 S16.273,10,24,10 M24,9.5C16.005,9.5,9.5,16.005,9.5,24S16.005,38.5,24,38.5c5.188,0,10.014-2.812,12.595-7.337l0.252-0.441 l-0.445-0.245l-6.132-3.374l-0.425-0.234l-0.246,0.418C28.431,29.269,26.286,30.5,24,30.5c-3.584,0-6.5-2.916-6.5-6.5 s2.916-6.5,6.5-6.5c2.275,0,4.346,1.166,5.542,3.118l0.253,0.414l0.421-0.241l6.073-3.47l0.441-0.252l-0.259-0.437 C33.864,12.233,29.086,9.5,24,9.5L24,9.5z"
+                                                opacity=".07"></path>
+                                        </g>
+                                    </svg>
+                                    <span class="text-2xl">C#</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Basic Knowledge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="">
+            <div class="my-[5rem]">
+                <div class="justify-self-center text-center">
+                    <span class="text-gray-600 text-xl">Browse My Recent</span>
+                    <h1 class="text-5xl font-bold">
+                        Designs &
+                        Projects</h1>
+                </div>
+
+                <div class="justify-items-center my-10 md:mx-[5rem] xl:mx-[10rem]">
+                    <div class="my-4">
+                        <p class="text-xl font-semibold">Capstone Project</p>
+                    </div>
+                    <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-4 gap-y-4">
+                        <img src="/src/images/FurrySafe-Login.PNG" alt="frrysf-login" class="rounded-lg border">
+                        <img src="/src/images/FurrySafe.png" alt="frrysf-login" class="rounded-lg border">
+                    </div>
+
+                    <div class="flex flex-col gap-y-2 border-b pb-[3rem]">
+                        <p class="mt-4">
+                            <b>FurrySafe</b> : An Online Animal Locator Application for Furry Animals
+                        </p>
+                        <p>
+                            An Online Animal Tracking System designed to provide a social media community for users who
+                            had a heart for animals. The main Features of this website are Shelter location & Animal
+                            Tracking, Stay
+                            Reporting, Missing Reporting, and also Ownership Behavior Reporting that helps the
+                            community, pet owners and shelter locate/rescue a lost, stray,
+                            abused and abandoned animal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="justify-items-center md:mx-[5rem] xl:mx-[10rem] my-[5rem]">
+                    <div class="my-4">
+                        <p class="text-xl font-semibold">Third Year System Project</p>
+                    </div>
+                    <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-4 gap-y-4">
+                        <img src="/src/images/ps-ps.png" alt="ps-ps" class="rounded-lg border">
+                        <img src="/src/images/ps-employee.png" alt="ps-employee" class="rounded-lg border">
+                    </div>
+
+                    <div class="flex flex-col gap-y-2 border-b pb-[3rem] justify-self-start">
+                        <p class="mt-4">
+                            <b>WageGauge</b> : Payroll System
+                        </p>
+                        <p>
+                            This is my Third Year System Project and I was assign to create the User-Interface Design up
+                            until UI Development. Although I'm on the part of working on our User-Interface, our leader
+                            also gave us some simple functions to try and work on.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="justify-items-center md:mx-[5rem] xl:mx-[10rem] my-[5rem] border-b pb-[3rem]">
+                    <div class="my-4">
+                        <p class="text-xl font-semibold">2nd Year System Project</p>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center gap-x-8">
+                        <img src="/src/images/ps-2ndsem.jpg" alt="ps-ps" class="rounded-lg border w-[700px]">
+                        <div class="flex flex-col gap-y-2 justify-self-start">
+                            <p class="mt-4 font-bold">
+                                Payroll System
+                            </p>
+                            <p>
+                                This is my 2nd Year <b class="text-red-600">unfinished</b> System Project and I was
+                                assign to create the User-Interface Design up until UI Development.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="justify-items-center md:mx-[5rem] xl:mx-[10rem] my-[5rem] border-b pb-[3rem]">
+                    <div class="my-4">
+                        <p class="text-xl font-semibold">Figma Designs Project</p>
+                    </div>
+
+                    <div class="flex flex-col gap-y-4">
+                        <div class="flex flex-col lg:flex-row items-center gap-x-8">
+                            <a href="https://www.figma.com/design/1sFhY8okRGidA8WulFhD1N/Untitled?node-id=0-1&t=pDuIoivvkIGQuO5u-1"
+                                target="_blank" rel="noopener noreferrer" class="relative group">
+                                <img src="/src/images/Mobile_Ecommerce_Design.PNG" alt="ps-ps"
+                                    class="rounded-lg border transition duration-300 ease-in-out group-hover:blur-sm">
+                                <span
+                                    class="absolute inset-0 flex items-center justify-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-black bg-opacity-50 rounded-lg">
+                                    View Design
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="flex flex-col lg:flex-row items-center gap-x-8">
+                            <a href="https://www.figma.com/proto/0YT0PJT62yCgr9BXHOzQ0u/Fiactive-Project-Making?node-id=1-2&starting-point-node-id=1%3A2&t=5fk5RqVQiotA2b1z-1"
+                                target="_blank" rel="noopener noreferrer" class="relative group">
+                                <img src="/src/images/fiactive.PNG" alt="ps-ps"
+                                    class="rounded-lg border transition duration-300 ease-in-out group-hover:blur-sm">
+                                <span
+                                    class="absolute inset-0 flex items-center justify-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-black bg-opacity-50 rounded-lg">
+                                    View Design
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="justify-items-center md:mx-[5rem] xl:mx-[10rem] my-[5rem]">
+                            <div class="my-4">
+                                <p class="text-xl font-semibold">Project Logo Making Ideas</p>
+                            </div>
+                            <div id="logo-images" class="grid place-items-center items-center gap-x-4 gap-y-4">
+                                <div class="flex w-[300px]">
+                                    <img src="/src/images/FrrysfLOGO.png" alt="ps-ps"
+                                        class="rounded-lg border py-8 px-4 ">
+                                </div>
+                                <div class="flex">
+                                    <a href="https://www.canva.com/design/DAFPZuIiHto/5PxL8KcP4E0q0tk2wlL3IA/view?utm_content=DAFPZuIiHto&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha829a72545"
+                                        target="_blank" rel="noopener noreferrer" class="relative group">
+                                        <img src="/src/images/Fiactive-LOGO.png" alt="ps-ps"
+                                            class="rounded-lg border transition duration-300 ease-in-out group-hover:blur-sm">
+                                        <span
+                                            class="absolute inset-0 flex items-center justify-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-black bg-opacity-50 rounded-lg">
+                                            View Designs
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="flex w-[300px]">
+                                    <a href="https://www.canva.com/design/DAGd_G_9Uxg/13qBK71jQltBvj9LsutYbg/view?utm_content=DAGd_G_9Uxg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h97ebadb2c4"
+                                        target="_blank" rel="noopener noreferrer" class="relative group">
+                                        <img src="/src/images/WageGauge.png" alt="ps-ps"
+                                            class="rounded-lg border transition duration-300 ease-in-out group-hover:blur-sm ">
+                                        <span
+                                            class="absolute inset-0 flex items-center justify-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out bg-black bg-opacity-50 rounded-lg">
+                                            View Designs
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-[5rem] h-[20vh]">
+            <div>
+                <div class="justify-self-center text-center">
+                    <span class="text-gray-600 text-xl">Get in Touch</span>
+                    <h1 class="text-5xl font-bold">Contact Me</h1>
+                </div>
+
+                <div
+                    class="flex justify-self-center my-[2rem] border rounded-2xl w-fit px-10 py-4 hover:bg-teal-600 hover:text-white ">
+                    <a href="mailto:m.gotong000@gmail.co" class="flex gap-x-4 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                            viewBox="0 0 48 48">
+                            <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
+                            <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path>
+                            <polygon fill="#e53935"
+                                points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17">
+                            </polygon>
+                            <path fill="#c62828"
+                                d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z">
+                            </path>
+                            <path fill="#fbc02d"
+                                d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z">
+                            </path>
+                        </svg>
+                        <span class="hover:text-white underline">m.gotong000@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pb-[2rem]">
+        <nav class="flex justify-center my-[2rem]">
+            <div>
+                <ul class="flex gap-x-8 text-lg md:text-xl xl:text-3xl">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p class="text-center text-gray-600">Copyright &#169; 2025 Marijoe Gotong. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
