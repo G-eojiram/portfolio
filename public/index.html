@@ -51,8 +51,8 @@
     </nav>
 
     <main>
-        <section id="profile" class="pt-0">
-            <div class="flex flex-col lg:flex-row items-center justify-center gap-x-10 border-b py-[10rem]">
+        <section id="profile" class="profile-container">
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-x-10 border-b py-[8rem]">
                 <div class="drop-shadow-2xl rounded-full">
                     <img src="assets/circleprofileimage.png" alt="profile-image" class="w-[500px]">
                 </div>
@@ -60,8 +60,8 @@
                     <span class="text-xl lg:text-2xl text-gray-700 font-bold">Hello, I'm</span>
                     <h1 class="text-5xl lg:text-6xl font-extrabold">Marijoe Gotong</h1>
                     <span class="text-3xl lg:text-4xl font-bold text-teal-800">Frontend Developer</span>
-                    <div class="mt-2 flex gap-x-4 justify-center lg:justify-start ">
-                        <button onclick="window.open('/src/assets/resume-marijoe.pdf')"
+                    <div class="mt-2 flex gap-x-4 justify-center lg:justify-start text-sm">
+                        <button onclick="window.open('./assets/resume-marijoe.pdf')"
                             class="bg-gray-50 px-5 py-3 rounded-xl font-semibold text-gray-600 border text-sm hover:bg-teal-800 hover:text-white">
                             Download CV</button>
                         <button onclick="location.href='./#contact'"
@@ -72,7 +72,7 @@
             </div>
         </section>
 
-        <section id="about" class="py-[5rem] border-b">
+        <section id="about" class="about-container border-b">
             <div>
                 <div class="justify-self-center text-center">
                     <span class="text-gray-600 text-2xl">Get To Know More</span>
@@ -84,7 +84,7 @@
                             class="about-pic w-[500px] xl:w-[2000px]">
                     </div>
                     <div
-                        class="detail-container flex flex-col h-fit gap-y-4 border px-[4rem] py-[3rem] rounded-3xl lg:w-[50rem] xl:w-[250rem] text-lg text-justify">
+                        class="detail-container flex flex-col h-fit gap-y-4 border p-[3rem] text-base md:text-lg rounded-3xl lg:w-[50rem] xl:w-[250rem] text-left">
                         <p>Im a UI Designer and Front End Developer.</p>
                         <p>
                             I like Art, so I enjoy creating Designs and turn them into a Responsive User Friendly
@@ -109,15 +109,15 @@
             </div>
         </section>
 
-        <section id="experience" class="md:mx-[5rem] py-[5rem] border-b">
+        <section id="experience" class="experience-container md:mx-[5rem] border-b">
             <div class="grid gap-y-10">
                 <div class="justify-self-center text-center">
                     <span class="text-gray-600 text-2xl">Explore My</span>
                     <h1 class="text-5xl font-bold">Experience</h1>
                 </div>
                 <div id="experience-details" class="flex justify-center items-center p-4">
-                    <p class="text-justify text-lg">
-                        I specialize in frontend development, crafting responsive and visually engaging
+                    <p class="text-pretty text-base md:text-lg">
+                        &numsp;I specialize in frontend development, crafting responsive and visually engaging
                         interfaces. While I have some experience in backend development, I’m more effective on
                         the frontend side. I'm open to any position as long as there’s an opportunity to learn
                         and grow with guidance from experienced mentors.
@@ -216,12 +216,14 @@
                         </div>
                     </div>
 
-                    <div class="justify-items-center border p-8 rounded-xl px-[5rem]">
+
+                    <div class="justify-items-center border p-8 rounded-xl">
                         <div class="text-center">
                             <span class="text-3xl font-semibold">Backend Development</span>
                         </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 p-4 gap-x-[2rem] gap-y-8 justify-items-center">
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 gap-x-[2rem] gap-y-8 justify-items-center">
                             <div class="flex flex-col gap-y-2 items-center">
                                 <div class="flex gap-x-2 items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
@@ -336,14 +338,15 @@
                                 </div>
                                 <span class="text-sm text-gray-500">Basic Knowledge</span>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="project" class="">
-            <div class="my-[5rem]">
+        <section id="project" class="project-container">
+            <div>
                 <div class="justify-self-center text-center">
                     <span class="text-gray-600 text-xl">Browse My Recent</span>
                     <h1 class="text-5xl font-bold">
@@ -415,7 +418,7 @@
                     </div>
                 </div>
 
-                <div class="justify-items-center md:mx-[5rem] xl:mx-[10rem] my-[5rem] border-b pb-[3rem]">
+                <div class="justify-items-center md:mx-[5rem] xl:mx-[10rem] border-b pb-[3rem]">
                     <div class="my-4">
                         <p class="text-xl font-semibold">Figma Designs Project</p>
                     </div>
@@ -433,7 +436,7 @@
                             </a>
                         </div>
 
-                        <div class="flex flex-col lg:flex-row items-center gap-x-8">
+                        <div class="flex flex-col lg:flex-row pla-items-center items-center gap-x-8">
                             <a href="https://www.figma.com/proto/0YT0PJT62yCgr9BXHOzQ0u/Fiactive-Project-Making?node-id=1-2&starting-point-node-id=1%3A2&t=5fk5RqVQiotA2b1z-1"
                                 target="_blank" rel="noopener noreferrer" class="relative group">
                                 <img src="assets/fiactive.PNG" alt="fiactive"
@@ -449,12 +452,12 @@
                             <div class="my-4">
                                 <p class="text-xl font-semibold">Project Logo Making Ideas</p>
                             </div>
-                            <div id="logo-images" class="grid place-items-center items-center gap-x-4 gap-y-4">
-                                <div class="flex w-[300px]">
+                            <div id="logo-images" class="grid justify-items-center items-center gap-x-8 gap-y-4">
+                                <div class="flex w-[250px]">
                                     <img src="assets/FrrysfLOGO.png" alt="FrrysfLOGO"
                                         class="rounded-lg border py-8 px-4 ">
                                 </div>
-                                <div class="flex">
+                                <div class="flex w-fit">
                                     <a href="https://www.canva.com/design/DAFPZuIiHto/5PxL8KcP4E0q0tk2wlL3IA/view?utm_content=DAFPZuIiHto&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha829a72545"
                                         target="_blank" rel="noopener noreferrer" class="relative group">
                                         <img src="assets/FiactiveLOGO.png" alt="Fiactive-LOGO"
@@ -465,7 +468,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="flex w-[300px]">
+                                <div class="flex w-[250px]">
                                     <a href="https://www.canva.com/design/DAGd_G_9Uxg/13qBK71jQltBvj9LsutYbg/view?utm_content=DAGd_G_9Uxg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h97ebadb2c4"
                                         target="_blank" rel="noopener noreferrer" class="relative group">
                                         <img src="assets/WageGauge.png" alt="ps-WageGauge"
@@ -483,7 +486,7 @@
             </div>
         </section>
 
-        <section id="contact" class="py-[5rem] h-[20vh]">
+        <section id="contact" class="contact-container">
             <div>
                 <div class="justify-self-center text-center">
                     <span class="text-gray-600 text-xl">Get in Touch</span>
@@ -514,9 +517,18 @@
         </section>
     </main>
     <footer class="pb-[2rem]">
+        <div class="flex justify-center">
+            <button class="border rounded-3xl p-4 animate-bounce hover:shadow-4xl hover:shadow-teal-500">
+                <a href="#">
+                    <img width="30" height="30"
+                        src="https://img.icons8.com/external-others-inmotus-design/30/external-Up-basic-web-ui-elements-others-inmotus-design.png"
+                        alt="external-Up-basic-web-ui-elements-others-inmotus-design" />
+                </a>
+            </button>
+        </div>
         <nav class="flex justify-center my-[2rem]">
             <div>
-                <ul class="flex gap-x-8 text-lg md:text-xl xl:text-3xl">
+                <ul class="flex gap-x-8 text-base sm:text-lg md:text-xl xl:text-3xl">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#project">Project</a></li>
@@ -524,7 +536,8 @@
                 </ul>
             </div>
         </nav>
-        <p class="text-center text-gray-600">Copyright &#169; 2025 Marijoe Gotong. All Rights Reserved.</p>
+        <p class="text-center text-gray-600 text-xs sm:text-sm">Copyright &#169; 2025 Marijoe Gotong. All Rights
+            Reserved.</p>
     </footer>
 </body>
 
